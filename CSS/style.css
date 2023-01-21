@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    width: 100%;
+}
+iframe{
+    width: 100%;
+}
+a:hover{
+    color:white;
+    text-decoration: none;
+}
+/*Fixed button*/
+.fixed-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 18px;
+    background-color: #76baed;
+    z-index: 11;
+}
+.fixed-btn a{
+    color: #fff;
+    font-size: 18px;
+}
+/*end of fixed button*/
+/*header*/
+header{
+    left:0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    box-shadow: 1px 1px 10px black;
+}
+header img{
+    width: 12%;
+}
+.navbar-brand{
+    width: 30%;
+    font-size:30px;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    color: white !important;
+}
+header li{
+    position: relative;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #f6f6f6 !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #76baed;
+    padding: 30px 16px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: white;
+}
+/*end of header*/
+
+/*homeheader*/
+.HomeHeader{
+    background-color: #f4feff;
+    z-index: 12;
+    position: relative;
+}
+.Homeheader-img {
+    width: 60%;
+    margin-left: auto;
+    border-radius: 27px;
+    border: 15px solid black;
+    overflow: hidden;
+}
+.HomeHeader .paragraphs{
+    padding-right: 155px;
+    line-height: 1.8;
+}
+.down-btn , .contact-btn{
+    position:relative;
+    z-index: 1;
+}
+.play-btn{
+    position:relative;
+    z-index: 1;
+}
+/*end of homeheader*/
+/*Feature section*/
+.features .feature-icon i{
+    border-radius: 50px;
+    background:linear-gradient(90deg,#19f6a5 0%,#76baed 100%);
+    color:#fff;
+    font-size: 30px;
+}
+.features .feature-info p{
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+/*end of feature section*/
+/*Support section*/
+.support-item{
+    padding:90px 0 7px 0;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+}
+.support .support-icon{
+    z-index: 1;
+}
+.support .support-icon i{
+    background-color: violet;
+    color: white;
+    padding: 22px;
+    font-size: 40px;
+    border-radius: 43px;
+    transition: all 0.5s;   
+}
+.support .support-text a{
+    font-size: 24px;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+.support .support-text p{
+    line-height: 1.9;
+    padding: 18px;
+}
+/*end of support section*/
+/*Gallery section*/
+.gallery{
+    overflow: hidden;
+}
+.gallery .col-xl-4{
+    left: 166px;
+}
+.gallery .col-xl-8{
+    left: 150px;
+}
+.gallery-imgs .Image{
+    border:8px solid black;
+    border-radius: 15px;
+    width: 30%;
+    overflow: hidden;
+    height: fit-content;
+}
+.gallery-imgs .Image1{
+    width: 28.5%;
+}
+.gallery-imgs .Image2{
+    width: 26.8%;
+}
+/*end of gallery section*/
+/*start of plan section*/
+.plan-background{
+    position: relative;
+    z-index: 1;
+}
+.plans .section-intro h1{
+    color: #fff;
+}
+.plans .col-xl-4{
+    position: relative;
+}
+.card{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.178);
+    margin: 25px 9px;
+    transition: all 0.5s;
+}
+.card span{
+    color: #57667e;
+    font-size: 24px;
+    margin: 30px 0;
+    display: inline-block;
+}
+.card h5{
+    color: #6a56a6  ;
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+.card h5 sub{
+    font-size:18px
+}
+.card ul {
+    list-style: none;
+    line-height: 2.5;
+    color: #717081;
+    margin-bottom: 30px;
+}
+.plans .card .btn{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+/*end of plan section*/
+/*start of customer section*/
+.customers .card{
+    padding:55px  44px;
+    margin: 0px 15px 100px 15px;
+}
+.customers .customer-img{
+    margin-bottom: 20px;
+}
+.customers .card img{
+    width: 58px;
+}
+.customers .card-body{
+    padding: 0;
+}
+.customers .card-body a{
+    font-size: 20px;
+    color: #712fda;
+    margin-bottom: 10px;
+}
+.customers .card-body p{
+    line-height: 1.9;
+}
+.carousel-indicators .active {
+    background-color: #19f6a5;
+    width: 16px;
+    height: 15px;
+}
+.carousel-indicators li {
+    width: 12px;
+    height: 11px;
+    border-radius: 100%;
+    background-color: #76baed;
+    opacity: 1  ;
+}
+.customers .overlay{
+    position: relative;
+    z-index: 1;
+}
+/*end of customer section*/
+/*start of available apps section*/
+.available-apps{
+    position: relative;
+    background:linear-gradient(120deg,#19f6a5 0%,#76baed 100%)
+}
+.available-apps .app-download img{
+    width: 30%;
+}
+.available-apps .apps-img{
+    padding-left: 100px;
+}
+/*end of available apps section*/
+/*start of contact section*/
+.contact{
+    padding-top: 80px;
+    height: 306px;
+    overflow: hidden;
+}
+.contact .col-xl-4:last-child{
+    text-align: end;
+    z-index: 1;
+}
+/*end of contact section*/
+/*strat of Conatct-us setction*/
+.contact-us .form-title{
+    font-size: 27px;
+}
+.send-btn{
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #76baed ;
+    border: 1px solid #76baed ;
+    transition: all 0.3s;
+}
+.formal-control{
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 16px 12px;
+    border: 1px solid #e5e6e9;
+}
+textarea.formal-control{
+    min-height: 152px;
+    max-height: 152px;
+}
+.contact-us  .col-xl-4:last-child .row{
+    justify-content: end;
+    margin-bottom: 25px;
+}
+.contact-us  .col-xl-2{
+    padding: 0;
+    text-align: end;
+}
+.contact-us  .col-xl-4:last-child i{
+    font-size: 25px;
+    text-align: end;
+    color: #8f9195;
+}
+.contact-us  .col-xl-4:last-child h3{
+    font-size: 16px;
+}
+.contact-us  .col-xl-4:last-child p{
+    color: #8a8a8a;
+} 
+/*end of Conatct-us setction*/
+/*start of footer section*/
+footer .page-logo{
+    width: 40%;
+    margin-bottom: 20px;
+}
+footer .heading{
+    margin-bottom: 40px;
+}
+footer .heading h4{
+    font-size: 18px;
+    color: white;
+}
+footer ul{
+    list-style: none;
+    line-height: 2;
+}
+footer ul li{
+    transition: all 0.3s;
+}
+footer ul li a{
+    color:#868c98;
+    font-weight: 200;
+    transition: all 0.3s;
+}
+footer .form-control{
+    background-color: #f9f9fe;
+}
+/*end of footer section*/
+/*shared properties*/
+.blue-background{
+    background-color: #f4feff;
+}
+.p-80px{
+    padding: 80px 0;
+}
+.pt-130px{
+    padding-top:130px ;
+}
+.color-purple{
+    color:#2b044d
+}
+.color-gray{
+    color:#707b8e;
+}
+.font-Nunito{
+    font-family: 'Nunito', sans-serif;
+}
+.font-poppins{
+    font-family: 'Poppins', sans-serif;
+}
+.fuschia-btn {
+    background-color: #76baed ;
+    color: #fff;
+}
+.violet-btn{
+    background-color: #19f6a5;
+    color: #fff;
+}
+.section-intro{
+    padding-right: 200px;
+}
+.section-intro h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.section-intro p{
+    line-height: 1.9;
+}
+/*end of shared properties*/
+/*Overlays*/
+header .active::after{
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+    right: 15px;
+    height: 2px;
+    background-color: #19f6a5;
+}
+header li::after{
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+    right: 84px;
+    height: 2px;
+    background-color: #19f6a5;
+    transition: all 0.3s;
+}
+.down-btn::before , .contact-btn::before{
+    content:"";
+    inset: 0;
+    position:absolute;
+    background-color: #0000001c;
+    z-index: -1;
+    width: 0;
+    transition: all 0.5s cubic-bezier(.5,1.6,.4,.7);
+}
+.play-btn::before{
+    content:"";
+    position:absolute;
+    background-color: #03030327;
+    z-index: -1;
+    left: 24px;
+    right: 25px;
+    top: 24px;
+    bottom: 25px;
+    border-radius: 100%;
+    transition: all 0.5s cubic-bezier(.5,1.6,.4,.7);
+}
+.support .support-icon::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -36px;
+    bottom: 0;
+    left: 182px;
+    background-image: url("../Images/Icons/xdot-bg.png.pagespeed.ic.CHsEbhdzpj.webp");
+    background-repeat: no-repeat;
+    z-index: -1;
+    transition: all 0.5s;
+}
+.plans::after{
+    content:"";
+    inset: 0;
+    position: absolute;
+    background:linear-gradient(18deg,#76baed 0%,#19f6a5 100%);
+    z-index: -1;
+    /* height: 70%; */
+}
+.plans .col-xl-4::before{
+    content: "";
+    inset: 0;
+    top: 33px;
+    left: 33px;
+    position: absolute;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+    background-image: url("../Images/xcard_dot.png.pagespeed.ic.p3ARBYlPMA.webp");
+}
+.plans .btn::before{
+    content: "";
+    inset: 0;
+    position: absolute;
+    width: 0;
+    z-index: -1;
+    background-color: #dc3545;
+    transition: all 0.5s cubic-bezier(.5,1.6,.4,.7);
+}
+.customers .overlay::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.488);
+    z-index: 0;
+}
+.available-apps .overlays .top-overlay {
+    position: absolute;
+    top: -47px;
+    left: -12px;
+    animation: heart-beats 1s infinite alternate;
+}
+.available-apps .overlays .bottom-overlay {
+    position: absolute;
+    bottom: -88px;
+    left: -162px;
+}
+.contact .overlays .overlay-left{
+    left: -10%;
+    position: absolute;
+    top: 30%;
+    width: 20%;
+    z-index: -1;
+    animation: rotate 50s infinite;
+}
+.contact .overlays .overlay-right{
+    position: absolute;
+    right: 0;
+    top: 4px;
+}
+footer form{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    /* border:2px solid black */
+}
+footer .overlay-btn{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    padding: 0px 20px ;
+    z-index: 1;
+    background-color: #76baed;
+}
+/*end of overlays*/
+/*Hover*/
+header li:hover::after{
+    right: 15px;
+}
+.down-btn:hover::before , .contact-btn:hover::before{
+    width: 100%;
+}
+.play-btn:hover::before{
+    inset: 0;
+}
+.support .support-text a:hover{
+    color: #76baed  ;
+}
+.support-item:hover , .support .row .col-xl-4:nth-child(3) .support-item{
+    border:1px solid #19f6a592
+}
+.support-item:hover .support-icon i , .support .row .col-xl-4:nth-child(3) .support-icon i{
+    background-color: #19f6a5;
+}
+.support-item:hover .support-icon::before , .support .row .col-xl-4:nth-child(3) .support-icon::before{
+    left: 188px;
+}
+.plans .col-xl-4:hover .card{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.178);
+}
+.plans .col-xl-4:hover::before{
+    left: 253px;
+    top: 430px;
+}
+.plans .col-xl-4:hover .btn::before{
+    width: 100%;
+}
+footer ul li:hover{
+    transform:translateX(12px);
+}
+footer ul li:hover a{
+    color: #19f6a5;
+
+}
+footer .overlay-btn:hover{
+    color:rgb(0, 0, 0)
+}
+footer .page-brand , footer .love-icon  {
+    color:19f6a5
+}
+.send-btn:hover{
+    color: #fff;
+    background-color: #76baed !important;
+}
+.overlay-right{
+    width: 35%;
+}
+/*end of hover*/
+/*Animation*/
+@keyframes heart-beats {
+    100%{
+        transform: scale(1.4);
+    }
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/*end of animation*/
+
+/*Media Query*/
+@media screen and (max-width:1024px) {
+    .pt-130px {
+        padding-top: 52px;
+    }
+    .section-intro {
+        padding-right: 0;
+    }
+    .section-intro h1 {
+        font-size: 41px;
+    }    
+    .support .support-icon::before {
+        left: 133px;
+    }
+    .gallery .col-xl-4 {
+        left: 19px;
+    }
+    .gallery .col-xl-8 {
+        left: 47px;
+    }
+    .contact-us .col-xl-4:last-child{
+        padding: 15px 0;
+    }
+    .contact .overlays .overlay-left , .contact .overlays .overlay-right{
+        display: none;
+    }
+}
+@media screen and (max-width:991.5px){
+    header li::after{
+        display: none;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        padding: 11px 16px;
+    }
+    .navbar-brand{
+        width: 60%;
+    }
+}
+@media screen and (max-width:900px) {
+    .Homeheader-img , .feature-img , .customers .overlay {
+        display: none;
+    }
+}
+@media screen and (max-width:768px) {
+    .contact {
+        padding-top: 40px;
+    }
+    .section-intro h1 {
+        font-size: 39px;
+    }
+    .HomeHeader .paragraphs{
+        padding: 0;
+    }  
+    footer .page-logo {
+        width: 22%;
+    }     
+    
+}
+/*end of media query*/
